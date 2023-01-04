@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.2.0/main.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-3 p-0 sidebar">
+                <div class="d-flex">
+                    <div class="bg-dark border-right vh-100 ">
+                        <div class="sidebar-heading bg-dark text-white">
+                            <i class="fa-solid fa-users fa-4x"></i>
+                        </div>
+                        <ul class="list-group list-group-flush overflow-auto mt-5">
+                            <li
+                                class="list-group-item list-group-item-action list-group-item-mine mt-5 bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-dashboard ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">Dashboard</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-cog ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">Manage Session</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-people-group ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">Students</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-book-open ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">Academic Syllabus</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-chalkboard-teacher ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">Teachers</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-people-line ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">Parents</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-user-alt ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">Liabrarian</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-user-circle ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">Manage Media</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-book-open-reader ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">All Inquiries</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-timeline ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">Manage Loan</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-book-tanakh ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">inquiry Category</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-user-clock ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">Accountants</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-file-circle-check ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">Attendance</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-message ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">All Massages</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-action list-group-item-mine bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-cog ml-2"></i>
+                                    </div>
+                                    <div class="col-sm-10 pl-0">Manage Alumini</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col pl-0 m-0">
+                <div class="sticky-top bg-light">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="headers">STUDENT MANAGEMENT SYSTEM</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-1 pt-2">
+                                    <i class="fa fa-user ml-2"></i>
+                                </div>
+                                <div class="col-sm-11 p-0 pt-2">admin</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-8 pt-2">
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-success dropdown-toggle btn-sm"
+                                            data-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-language"></i>
+                                            language
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">English</a>
+                                            <a class="dropdown-item" href="#">Gujrati</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 pt-2 pl-5">
+                                    Log Out <i class="fa fa-right-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="row content ml-2">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4>
+                                <i class="fa fa-circle-arrow-right"></i> Admin Dashboard
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card bg-primary" style="width: 14rem">
+                                <div class="card-body">
+                                    <i class="fa fa-users fa-6x students"></i>
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title h2 text-white"><b>8</b></h5>
+                                        <h6 class="text-white" mb-2 pt-1>Students</h6>
+                                        <p class="card-text text-white">Total Students</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card bg-success" style="width: 14rem">
+                                <div class="card-body">
+                                    <i class="fa fa-user-friends fa-6x students"></i>
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title h2 text-white"><b>2</b></h5>
+                                        <h6 class="text-white" mb-2 pt-1>Teachers</h6>
+                                        <p class="card-text text-white">Total Teachers</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-info" style="width: 14rem">
+                                <div class="card-body">
+                                    <i class="fa fa-user-group fa-6x students"></i>
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title h2 text-white"><b>1</b></h5>
+                                        <h6 class="text-white" mb-2 pt-1>Parents</h6>
+                                        <p class="card-text text-white">Total Parents</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-danger" style="width: 14rem">
+                                <div class="card-body">
+                                    <i class="fa fa-book-open-reader fa-6x students"></i>
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title h2 text-white"><b>2</b></h5>
+                                        <h6 class="text-white" mb-2 pt-1>Librarian</h6>
+                                        <p class="card-text text-white">Total Librarian</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-md-3">
+                            <div class="card bg-success" style="width: 14rem">
+                                <div class="card-body">
+                                    <i class="fa fa-user-graduate fa-6x students"></i>
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title h2 text-white"><b>1</b></h5>
+                                        <h6 class="text-white" mb-2 pt-1>Accountants</h6>
+                                        <p class="card-text text-white">Total Accountants</p>
+                                        <!-- <a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-primary" style="width: 14rem">
+                                <div class="card-body">
+                                    <i class="fa fa-cogs fa-6x students"></i>
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title h2 text-white"><b>2</b></h5>
+                                        <h6 class="text-white" mb-2 pt-1>All Inquiries</h6>
+                                        <p class="card-text text-white">Total Inquiries</p>
+                                        <!-- <a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-danger" style="width: 14rem">
+                                <div class="card-body">
+                                    <i class="fa fa-message fa-6x students"></i>
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title h2 text-white"><b>0</b></h5>
+                                        <h6 class="text-white" mb-2 pt-1>All Messages</h6>
+                                        <p class="card-text text-white">All Messages</p>
+                                        <!-- <a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-info" style="width: 14rem">
+                                <div class="card-body">
+                                    <i class="fa fa-book-open fa-6x students"></i>
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title h2 text-white"><b>0</b></h5>
+                                        <h6 class="text-white" mb-2 pt-1>Attendance</h6>
+                                        <p class="card-text text-white">Total Presents Students</p>
+                                        <!-- <a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-2 ">
+                        <div class="col-md-7">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-sm-1 pr-0 pt-1 pr-2">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <div class="col-sm-11 float-left pl-0 m-0">
+                                            <big>Event Shedule</big>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div id="calendar">
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-sm-1 pr-0 pt-1 pr-2">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <div class="col-sm-11 float-left pl-0 m-0">
+                                            <big>Charts</big>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="chart" class="report"></div>
+                            </div>
+                                </div>
+                           
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+</body>
+
+</html>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.2.0/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@4.2.0/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@4.2.0/main.js"></script>
+<script>
+     var eventsArray = [
+    {
+      title  : 'event1',
+      start  : '2019-07-20'
+    },
+    {
+      title  : 'event2',
+      start  : '2019-08-05',
+      end    : '2019-08-07'
+    },
+    {
+      title  : 'event3',
+      start  : '2019-09-03'
+    },
+    {
+      title  : 'event3',
+      start  : '2019-10-05'
+    }
+  ];
+
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        height: 350,
+        plugins: [ 'dayGrid', 'interaction' ],
+        
+        dateClick: function(info) {
+            alert('Clicked on: ' + info.dateStr);
+          
+          eventsArray.push({
+            date: info.dateStr,
+            title: "test event added from click"
+          });
+          
+          calendar.refetchEvents();
+        },
+      
+        eventClick: function(info) {
+          alert(info.event.title)
+        },
+      
+        events: function(info, successCallback, failureCallback) {
+          successCallback(eventsArray);
+        }
+    });
+
+    calendar.render();
+  });
+</script>
+<script>
+    var options = {
+        series: [
+            {
+                name: 'Actual',
+                data: [
+                    {
+                        x: '2011',
+                        y: 1292,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 1400,
+                                strokeHeight: 5,
+                                strokeColor: '#775DD0'
+                            }
+                        ]
+                    },
+                    {
+                        x: '2012',
+                        y: 4432,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 5400,
+                                strokeHeight: 5,
+                                strokeColor: '#775DD0'
+                            }
+                        ]
+                    },
+                    {
+                        x: '2013',
+                        y: 5423,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 5200,
+                                strokeHeight: 5,
+                                strokeColor: '#775DD0'
+                            }
+                        ]
+                    },
+                    {
+                        x: '2014',
+                        y: 6653,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 6500,
+                                strokeHeight: 5,
+                                strokeColor: '#775DD0'
+                            }
+                        ]
+                    },
+                    {
+                        x: '2015',
+                        y: 8133,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 6600,
+                                strokeHeight: 13,
+                                strokeWidth: 0,
+                                strokeLineCap: 'round',
+                                strokeColor: '#775DD0'
+                            }
+                        ]
+                    },
+                    {
+                        x: '2016',
+                        y: 7132,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 7500,
+                                strokeHeight: 5,
+                                strokeColor: '#775DD0'
+                            }
+                        ]
+                    },
+                    {
+                        x: '2017',
+                        y: 7332,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 8700,
+                                strokeHeight: 5,
+                                strokeColor: '#775DD0'
+                            }
+                        ]
+                    },
+                    {
+                        x: '2018',
+                        y: 6553,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 7300,
+                                strokeHeight: 2,
+                                strokeDashArray: 2,
+                                strokeColor: '#775DD0'
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        chart: {
+            height: 350,
+            type: 'bar'
+        },
+        plotOptions: {
+            bar: {
+                columnWidth: '60%'
+            }
+        },
+        colors: ['#00E396'],
+        dataLabels: {
+            enabled: false
+        },
+        legend: {
+            show: true,
+            showForSingleSeries: true,
+            customLegendItems: ['Actual', 'Expected'],
+            markers: {
+                fillColors: ['#00E396', '#775DD0']
+            }
+        }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+
+
+
+</script>
+
+</html>
