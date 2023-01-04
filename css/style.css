@@ -79,7 +79,7 @@ body,html{
 }
 .footer i.fa{
     font-size: 20px;
-   
+    krishnasarvaiya98.github.io
 }
 .footer li a:hover{
     color: #5DA3FA;
@@ -118,6 +118,7 @@ body,html{
 .testimonials{
     border-radius: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 .standard li{
     list-style-type: square;
@@ -162,7 +163,7 @@ body,html{
         margin-left: 18px;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .card i.fa{
         place-items: center;
     }
@@ -177,21 +178,24 @@ body,html{
     }
     .expert-icons{
         text-align: center;
+        
     }
-    .footer i.fa{
+    /* .footer i.fa{
        float: right;
        margin-left: 5px;
-    }
+    } */
     #header{
         height: 40px;
     }
     #logo{
         margin-top: 0px;
     }
+    
 }
+
 .login{
     background-image: url(../images/banner/students.jpg) ;
-    height: 100%;
+    height: 110%;
     background-repeat: no-repeat;
     background-size: cover;
 }
