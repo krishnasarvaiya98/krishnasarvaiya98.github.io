@@ -22,3 +22,20 @@ $('.header-slider').owlCarousel({
         }
     }
 })
+
+function closeNav() {
+    document.getElementById("navbarNav").style.width = "0";
+    document.getElementById("navbar-fixed").style.marginLeft = "0" ;
+    $('#navbarNav').removeClass('show');
+    document.getElementById("header-tpots-img").style.display = "block";
+    document.getElementById("togglebtn-header").style.display = "block";   
+
+
+  }
+
+  function openNav() {
+    document.getElementById("navbarNav").style.width = "250px";
+    document.getElementById("navbar-fixed").style.marginLeft = "250px";
+    document.getElementById("header-tpots-img").style.display = "none";
+    document.getElementById("togglebtn-header").style.display = "none";   
+  }
